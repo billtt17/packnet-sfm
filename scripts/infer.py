@@ -114,6 +114,8 @@ def main(args):
 
     # Parse arguments
     config, state_dict = parse_test_file(args.checkpoint)
+    if config.model.depth_net.name == 'PackNetSlimEnc01':
+        config.model.depth_net.name = 'PackNetSAN01'
 
     # If no image shape is provided, use the checkpoint one
     image_shape = args.image_shape
