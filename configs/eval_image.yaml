@@ -1,7 +1,7 @@
 model:
     name: 'SelfSupModel'
     depth_net:
-        name: 'PackNet01'
+        name: 'PackNetSAN01'
         version: '1A'
     pose_net:
         name: 'PoseNet'
